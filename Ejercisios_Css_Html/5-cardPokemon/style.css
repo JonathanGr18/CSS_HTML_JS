@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url('/imagenes/fondo.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.card{
+    background: white;
+    border-radius: 1rem;
+    width: 23rem;
+    height: 30rem;
+    box-shadow: 0px 5px 10px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+.card .fondoPokemon #fondo-pokemon{
+    width: 23rem;
+    height: 9rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    box-shadow: 0px 5px 10px 10px rgba(0, 0, 0, 0.2);
+}
+.card  #pokemon{
+    position: absolute;
+    left: 6rem;
+    top: 4rem;
+
+    border-radius: 50%;
+    border: 5px solid rgb(96, 47, 132);
+    width: 10rem;
+    height: 10rem;
+}
+.card .pokemon{
+    font-size: 1.2rem;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+    margin-top: 6rem;
+}
+.card .pokemon #gengar{
+    font-size: 2rem;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.card .pokemon span{
+    color: rgb(117, 38, 110);
+}
+.card .pokemon #tipo{
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin-bottom: 5px;
+}
+.card .pokemon #tipo #fantasma, #veneno{
+    border-radius: 3px;
+    background-color: purple;
+    color: white;
+    padding: 0 5px 0 5px;
+}
+.card .pokemon #tipo #veneno{
+    background-color: blueviolet;
+}
+
+.card .infoPokemon {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.card .infoPokemon img{
+    width: 4rem;
+}
+
+

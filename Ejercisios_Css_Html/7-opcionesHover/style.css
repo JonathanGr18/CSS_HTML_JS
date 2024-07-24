@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    place-items: center;
+    background: linear-gradient(20deg, rgb(245, 245, 90), rgb(238, 168, 39) 70%);
+    background-repeat: none;
+}
+.containerMedia .boton{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    float: left;
+    margin: 0 5px;
+    background: wheat;
+    overflow: hidden;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease-out;
+}
+.containerMedia .boton:hover{
+    width: 200px;
+}
+.containerMedia .boton:nth-child(1):hover{
+    background: linear-gradient(200deg, rgb(60, 50, 233), rgb(200, 201, 246) 70%);
+}
+.containerMedia .boton:nth-child(2):hover{
+    background: linear-gradient(200deg, rgb(50, 233, 126), rgb(200, 246, 223) 70%);
+}
+.containerMedia .boton:nth-child(3):hover{
+    background: linear-gradient(200deg, rgb(233, 50, 50), rgb(246, 200, 200) 70%);
+}
+.containerMedia .boton:nth-child(4):hover{
+    background: linear-gradient(200deg, rgb(129, 50, 233), rgb(222, 200, 246) 70%);
+}
+.containerMedia .boton:nth-child(5):hover{
+    background: linear-gradient(200deg, rgb(233, 50, 114), rgb(246, 200, 205) 70%);
+}
+.containerMedia .boton .icono{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+}
+.containerMedia .boton:nth-child(1):hover .icono{
+    background: linear-gradient(320deg, rgb(0, 110, 255), rgb(106, 106, 242) 70%);
+    color: white;
+}
+.containerMedia .boton:nth-child(2):hover .icono{
+    background: linear-gradient(320deg, rgb(164, 240, 177), rgb(30, 209, 30) 70%);
+    color: white;
+}
+.containerMedia .boton:nth-child(3):hover .icono{
+    background: linear-gradient(320deg, rgb(244, 138, 138), rgb(246, 0, 0) 70%);
+    color: white;
+}
+.containerMedia .boton:nth-child(4):hover .icono{
+    background: linear-gradient(320deg, rgb(215, 194, 223), rgb(200, 26, 249) 70%);
+    color: white;
+}
+.containerMedia .boton:nth-child(5):hover .icono{
+    background: linear-gradient(320deg, rgb(221, 172, 184), rgb(255, 0, 72) 70%);
+    color: white;
+}
+.containerMedia .boton .icono i{
+    font-size: 25px;
+    line-height: 60px;
+    transition: all 0.4s ease-out; 
+}
+.containerMedia .boton span{
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 60px;
+    margin-left: 10px;
+    transition: all 0.2s ease-out;
+    opacity: 0;
+}
+.containerMedia .boton:hover span{
+    opacity: 1;
+    color: white;
+}

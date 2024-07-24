@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    display: flex;
+    /* centrado */
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-wrap: wrap;
+    padding-top: 2.5rem;
+}
+.container .card{
+    width: 10rem;
+    padding: 1rem 1rem 2rem 2rem;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+.container .card img{
+    width: 10rem;
+}
+.container .card:hover{
+    transform: translateY(-10px);
+}
+.container .card::before{
+    content: attr(data-notification);
+    position: absolute;
+    top: -30px; /*Posicion encima del hover*/
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(120, 116, 116, 0.522);
+    color: white;
+    padding: 5px 10px;
+    border-radius: .5rem;
+    font-size: 1rem;
+    opacity: 0; /*Oculta la notificacion inicialmente*/
+    transition: opacity 0.3s ease;
+    pointer-events: none; /*evita que la notificacion interfiera con el hover*/
+}
+.container .card:hover::before{
+    opacity: 1;
+}
+

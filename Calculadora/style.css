@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(310deg, black 45%, red 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calculadora{
+    border: none;
+    border-radius: .5rem;
+    width: 12rem;
+    height: 16rem;
+    display: grid;
+    grid-template: repeat(6, 1fr) / repeat(4, 1fr);
+    grid-template-columns: 1/3fr;
+    grid-gap: 5px;
+    padding: 15px;
+    background: rgb(29, 28, 28);
+}
+
+.calculadora button{
+    border: 0px solid black;
+    border-radius: 50px;
+    background: rgb(29, 28, 28);
+    color: white;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.calculadora button:hover{
+    background: white;
+    color: black;
+}
+
+.calculadora button:nth-child(3){ /* boton: AC */
+    grid-column:2/4;
+}
+
+.calculadora button:nth-child(17){ /* boton: 0 */
+    grid-column: 2/3;
+}
+.calculadora #display{
+    background: rgb(29, 28, 28);
+    text-align: end;
+    font-size: 2rem;
+    border-bottom: 1px solid rgba(80, 77, 77, 0.8);
+    grid-column: 1/5;
+    color: white;
+    /* Evitar desborde en el div */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+.calculadora .operator, .calculadora .equals{
+    color: orange;
+}

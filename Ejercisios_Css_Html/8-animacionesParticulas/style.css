@@ -1,0 +1,92 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    background: linear-gradient(180deg, black 80%, rgb(186, 12, 12) 100%);
+}
+
+.particula, 
+.particula1, 
+.particula2, 
+.particula3, 
+.particula4, 
+.particula5, 
+.particula6, 
+.particula7,
+.particula8 {
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 10%;
+    transform: translateX(-50%);
+    animation: moverAbajo 5s  infinite;
+    backdrop-filter: blur(10px);
+    background: red;
+    box-shadow:  
+    0 0 15px rgba(253, 0, 0, 0.5);
+}
+.particula1{
+    background: yellow;
+    box-shadow: 0 0 15px rgb(251, 251, 2);
+    left: 20%;
+    animation: moverAbajo 7.7s infinite;
+}
+
+.particula2{
+    background: rgb(68, 255, 6);
+    box-shadow: 0 0 15px rgb(2, 251, 14);
+    left: 30%;
+    animation: moverAbajo 6s infinite;
+}
+.particula3{
+    background: rgb(0, 179, 255);
+    box-shadow: 0 0 10px rgb(2, 238, 251);
+    left: 40%;
+    animation: moverAbajo 8.5s infinite;
+}
+.particula4{
+    background: rgb(255, 0, 230);
+    box-shadow: 0 0 10px rgb(226, 2, 251);
+    left: 50%;
+    animation: moverAbajo 7s infinite;
+}
+.particula5{
+    background: rgb(255, 98, 0);
+    box-shadow: 0 0 10px rgb(251, 164, 2);
+    left: 60%;
+    animation: moverAbajo 5.2s infinite;
+}
+.particula6{
+    background: rgb(0, 255, 187);
+    box-shadow: 0 0 10px rgb(2, 251, 193);
+    left: 70%;
+    animation: moverAbajo 8s infinite;
+}
+.particula7{
+    background: rgb(255, 0, 166);
+    box-shadow: 0 0 10px rgb(251, 2, 197);
+    left: 80%;
+    animation: moverAbajo 6.8s infinite;
+}
+.particula8{
+    background: rgb(0, 255, 42);
+    box-shadow: 0 0 10px rgb(6, 251, 2);
+    left: 90%;
+    animation: moverAbajo 5.2s infinite;
+}
+
+
+@keyframes moverAbajo {
+    0% {
+        top: 100%;
+        width: 30px;
+        height: 30px;
+    }
+    100% {
+        top: -15%;
+        width: 100px;
+        height: 100px;
+    }
+}

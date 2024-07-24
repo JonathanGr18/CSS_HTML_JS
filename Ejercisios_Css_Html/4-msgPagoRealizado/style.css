@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: rgb(54, 128, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.msgPago{
+    background-color: white;
+    width: 30rem;
+    padding: 1em;
+    border-radius: .5rem;
+    box-shadow: 0 4px 8px 10px rgba(19, 80, 126, 0.201);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.msgPago .msg{
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    height: 4rem;
+}
+.msgPago .msg p{
+    margin-left: 20px;
+    line-height: 30px;
+}
+
+.msgPago .msg span{
+    font-size: .8rem;
+}
+.msgPago .msg img{
+    width: 3.2rem;
+    height: 3.2rem;
+}
+.msgPago .botones{
+    display: flex;
+    justify-content: end;
+}
+.msgPago input[type="button"]{
+    height: 2rem;
+    width: 5.5rem;
+    margin: .5rem;
+    border-radius: 3px;
+    border: .1px solid rgba(0, 0, 0, 0.166);
+    cursor: pointer;
+}
+.msgPago .botones #btnDescargar{
+    background: rgb(95, 128, 246);
+    color: white;
+}
+@media (max-width:425px) {
+    .msgPago .botones{
+        display: flex;
+        flex-direction: column;
+    }
+    .msgPago .botones input[type="button"]{
+        width: 100%;
+    }
+}
