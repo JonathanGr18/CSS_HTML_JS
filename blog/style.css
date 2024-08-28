@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    font-family: "Lato", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+}
+html{
+    font-size: 62.4%;
+    /* Ocultar el desborde */
+    overflow-x: hidden;
+}
+body{
+    background-color: whitesmoke;
+}
+/* SECTION */
+section{
+    min-height: 100vh;
+    padding: 0 9%;
+    padding-top: 3.5rem;
+    padding-bottom: 2rem;
+}
+/* MENU */
+header{
+    position: fixed;
+    top: 0;
+    left: 0; 
+    bottom: 550px;
+    width: 100%;
+    
+    background-color: black;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    padding: 1.5rem 5%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+
+}
+header a{
+    font-size: 2rem;
+    color: white;
+}
+header a span{
+    color: rgb(16, 171, 185);
+}
+header nav a{
+    font-size: 1.4rem;
+    margin-left: 2rem;
+    color: white;
+}
+header nav a:hover{
+    color: aquamarine;
+}
+header input{
+    display: none;
+}
+header label{
+    font-size: 3rem;
+    color: white;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.aboutMe{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: url("images/fondo1.jpeg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.aboutMe .hand{
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+}
+.aboutMe .hand #circle1{
+    width: 40%;
+    position: relative;
+    left: 25%;
+    animation: float 4s  infinite ease;
+}
+.aboutMe .hand #circle2{
+    width: 40%;
+    position: relative;
+    animation: float 3s  infinite ease-in-out;
+}
+.aboutMe .hand #circle3{
+    width: 17%;
+    position: relative;
+    left: 50%;
+    animation: float 2.5s  infinite ease-in-out;
+}
+
+@keyframes float {
+    0%, 100%{
+        transform: translateY(0rem);
+    }
+    50%{
+        transform: translateY(-2.5rem);
+    }
+}
+
+.aboutMe .info{
+    font-size: 1.5rem;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    border: 1px solid rgba(255, 255, 255, 0.175);
+    border-radius: 15px;
+    width: 50vw;
+    height: 29rem;
+    text-align: center;
+    padding: 1%;
+    margin-left: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.aboutMe .info h2{
+    font-size: 3rem;
+}
+.aboutMe .info h4{
+    font-size: 2rem;
+}
+.portfolio{
+    background: url("images/fondo2.jpeg") no-repeat;
+    background-size: cover;
+}
+.portfolio h2{
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 4rem;
+}
+.portfolio .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 100vh;
+    margin: 2% 2%;
+}
+.portfolio .container .card{
+    border: 1px solid rgba(255, 255, 255, 0.164);
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px white,
+                0px 0px 5px black;
+    color: white;
+    width: 18rem;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.118);
+}
+.portfolio .container .card img{
+    height: 50%;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.portfolio .container .card h4{
+    font-size: 1.5rem;
+}
+.portfolio .container .card p{
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+.portfolio .container .card a{
+    font-size: 2.5rem;
+    text-shadow: 0 0px 5px white,
+                 0 0px 5px black;
+    color: black;
+    margin-bottom: 1rem;
+}
+
+.skills{
+    background: url("images/fondo3.jpeg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+.skills h2{
+    padding-top: 4rem;
+    color: white;
+    text-shadow: 0 0 5px white,
+                 0 0 5px black;
+    font-size: 4rem;
+}
+.skills .skill{
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+}
+.skills .skill div{
+    border: 1px solid rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    margin: .5rem;
+    width: 19rem;
+    height: 26rem;
+    backdrop-filter: blur(15px);
+    text-shadow: 0 0 5px white,
+                 0 0 5px black;
+    box-shadow:  0 0 5px white,
+                 0 0 5px black;
+}
+.skills .skill div h3{
+    font-size: 2.5rem;
+    padding: 1rem 0;
+}
+.skills .skill div li{
+    list-style-type: none;
+    line-height: 20px;
+    text-align: start;
+}
+.skills .skill div li span{
+    margin: 0 15px;
+    font-size: 1.6rem;
+}
+.skills .skill div ul li i{
+    margin: 0 15px;
+}
+.skills .skill div li .fa-star{
+    color: yellow;
+}
+.skills .skill div li .fa-bolt{
+    color: orange;
+}
+.skills .skill div li .fa-heart{
+    color: red;
+}
+
+/* Pc,etc. */
+@media(max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+}
+@media(max-width:990px){
+    section{
+        padding: 0 3%;
+        padding-top: 7.5 rem;
+        padding-bottom: 2rem;
+    }
+}
+
+/* Tablet */
+@media (max-width:768px) {
+    /* -----------------------Menu ---------------------*/
+    html{
+        font-size: 50%;
+    }
+    header label{
+        /* mostrar el icono de menu */
+        visibility: visible;
+        opacity: 1;
+    }
+    header nav{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        padding: 1rem 2rem;
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+        transform-origin: top;
+        transform: scaleY(0);
+        opacity: 0;
+        transition: .3s linear;
+    }
+    header nav a{
+        display: block;
+        margin: 2rem 0;
+        font-size: 2rem;
+        color: black;
+    }
+
+    header input:checked~nav{
+        transform: scaleY(1);
+        opacity: 1;
+    }
+    header input:checked~label::before{
+        content: '\f00d';
+    }
+
+} 
+
+/* Celular */
+@media(max-width:480px){
+    html{
+        font-size: 45%;
+    }
+    .aboutMe .hand{
+        margin-top: 3rem;
+    }
+    .aboutMe{
+        flex-direction: column-reverse;
+    }
+    .aboutMe .info{
+        width: 80%;
+    }
+
+}
